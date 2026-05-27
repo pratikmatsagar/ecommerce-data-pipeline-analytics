@@ -1,0 +1,112 @@
+# .gitignore - E-Commerce Data Pipeline
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+.jupyter/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Data (Large Files)
+data/bronze/*.csv
+data/bronze/*.parquet
+data/silver/
+data/gold/
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+
+# OS-specific
+Thumbs.db
+.DS_Store
+*.bak
+
+# IDE specific
+*.code-workspace
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Credentials (NEVER commit)
+credentials.json
+secrets.json
+config.local.json
+*.pem
+*.key
+*.p8
+
+# Large files (commit rules)
+*.parquet
+*.pq
+*.orc
+*.sql.gz
+
+# Exclude but track in LFS (Large File Storage)
+# *.parquet filter=lfs diff=lfs merge=lfs -text
+
+# Custom exclusions for this project
+results/
+cache/
+.spark-warehouse/
+metastore_db/
+
+# Keep project files
+!*.md
+!*.txt
+!*.py
+!*.sql
+!*.ipynb
+!.gitkeep
